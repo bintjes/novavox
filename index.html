@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novavox – Chœur mixte LGBTQIA+ à Lyon</title>
+  <meta name="description" content="Novavox, nouveau chœur mixte LGBTQIA+ à Lyon. Ouvert à tous les niveaux, recrutement dans tous les pupitres. Répétitions le mercredi de 20h à 21h30, salle Bonnand (Lyon 3).">
+  <meta name="theme-color" content="#d1148f">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <meta property="og:title" content="Novavox – Chœur mixte LGBTQIA+ à Lyon">
+  <meta property="og:description" content="Venez chanter ! Tous niveaux, tous pupitres. Répétitions le mercredi de 20h à 21h30.">
+  <meta property="og:image" content="assets/affichette.png">
+  <meta property="og:type" content="website">
+https://www.youtube.com/watch?v=LY8y2hQCp-8&list=RDLY8y2hQCp-8
+  <style>
+    :root {
+      --ink: #3a3b3d;
+      --paper: #fffafd;
+      --pink: #d1148f;
+      --pink-soft: #f8a8e8;
+      --pink-pale: #fde7f8;
+      --teal: #2cc7b0;
+      --blue: #2f6bff;
+      --red: #e22226;
+      --orange: #f58a1f;
+      --yellow: #f8e71c;
+      --green: #15874b;
+      --purple: #732c8c;
+      --pride: linear-gradient(90deg, var(--red) 0 16.66%, var(--orange) 0 33.33%, var(--yellow) 0 50%, var(--green) 0 66.66%, var(--blue) 0 83.33%, var(--purple) 0);
+      --display: "Bahnschrift SemiCondensed", "Bahnschrift", "Arial Narrow", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+      --script: "Segoe Script", "Bradley Hand", "Brush Script MT", cursive;
+      --maxw: 62rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--paper);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; }
+    .wrap { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; }
+
+    /* Navigation */
+    header.nav { position: sticky; top: 0; z-index: 10; background: rgba(58,59,61,.97); color: #fff; }
+    header.nav::after { content: ""; display: block; height: 4px; background: var(--pride); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .6rem 0; }
+    .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-family: var(--display); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .brand img { width: 2.1rem; height: 2.1rem; border-radius: 50%; }
+    nav ul { list-style: none; display: flex; gap: 1.4rem; margin: 0; padding: 0; }
+    nav a { text-decoration: none; font-size: .95rem; opacity: .88; }
+    nav a:hover, nav a:focus-visible { opacity: 1; text-decoration: underline; text-underline-offset: .3em; }
+    @media (max-width: 640px) { nav ul { gap: .8rem; } nav a { font-size: .82rem; } .brand span { display: none; } }
+
+    /* Hero */
+    .hero {
+      background: var(--pink-soft);
+      text-align: center;
+      padding: clamp(2.5rem, 7vw, 5rem) 0 clamp(3rem, 8vw, 5.5rem);
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: auto -10% -35% -10%; height: 70%;
+      background: var(--pride); opacity: .22; transform: rotate(-4deg); pointer-events: none;
+    }
+    .hero .wrap { position: relative; }
+    .hero img.logo { width: min(44vw, 11rem); margin: 0 auto 1.6rem; border-radius: 50%; box-shadow: 0 .6rem 1.6rem rgba(58,59,61,.3); }
+    .hero h1 {
+      display: inline-block; margin: 0 0 1.2rem; padding: .4em .8em;
+      background: var(--pink); color: #fff; border-radius: .5rem;
+      font-family: var(--display); font-weight: 400; text-transform: uppercase;
+      font-size: clamp(1.5rem, 5vw, 3rem); line-height: 1.15; letter-spacing: .02em;
+    }
+    .hero h1 strong { font-weight: 700; }
+    .hero .script {
+      display: block; margin: 0 auto 1.8rem; width: fit-content; max-width: 100%;
+      background: #fff; color: var(--pink); border-radius: 999px; padding: .2em 1.2em;
+      font-family: var(--script); font-size: clamp(1.2rem, 4vw, 2rem);
+    }
+    .cta { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; }
+    .btn {
+      display: inline-block; padding: .85rem 1.8rem; border-radius: 999px;
+      font-weight: 700; text-decoration: none; background: var(--ink); color: #fff;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .btn:hover, .btn:focus-visible { transform: translateY(-2px); box-shadow: 0 .5rem 1.2rem rgba(58,59,61,.3); }
+    .btn.alt { background: #fff; color: var(--ink); }
+    .pride-bar { height: .6rem; background: var(--pride); }
+
+    /* Sections */
+    section { padding: clamp(3rem, 8vw, 5.5rem) 0; }
+    section.tint { background: var(--pink-pale); }
+    h2 {
+      margin: 0 0 1.6rem; font-family: var(--display); font-weight: 700; text-transform: uppercase;
+      font-size: clamp(1.7rem, 4vw, 2.4rem); letter-spacing: .03em; color: var(--pink);
+    }
+    h2::after { content: ""; display: block; width: 4.5rem; height: 5px; margin-top: .6rem; background: var(--pride); border-radius: 3px; }
+    p { margin: 0 0 1rem; max-width: 42rem; }
+    .lead { font-size: 1.15rem; }
+
+    /* Texte + illustration */
+    .split { display: grid; gap: 2rem; grid-template-columns: 1fr minmax(0, 21rem); align-items: center; }
+    .illus { width: 100%; border-radius: 1rem; box-shadow: .5rem .5rem 0 var(--pink); border: 3px solid var(--ink); }
+    @media (max-width: 720px) { .split { grid-template-columns: 1fr; } .illus { max-width: 20rem; margin-inline: auto; } }
+
+    /* Vidéo */
+    .video { max-width: 48rem; aspect-ratio: 16 / 9; border-radius: 1rem; overflow: hidden; background: var(--ink); box-shadow: .5rem .5rem 0 var(--teal); border: 3px solid var(--ink); }
+    .video iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .note { margin-top: 1rem; font-size: .95rem; }
+    .note a { color: var(--pink); font-weight: 600; }
+
+    /* Bulles (comme sur l'affichette) */
+    .bubbles { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin-top: 2rem; }
+    .bubble {
+      position: relative; background: #fff; border: 3px solid var(--ink); border-radius: 1.6rem;
+      padding: 1.3rem 1.2rem; text-align: center;
+      font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 1.2rem; line-height: 1.25;
+      box-shadow: .35rem .35rem 0 var(--c, var(--pink));
+    }
+    .bubble small { display: block; margin-top: .5rem; font-family: "Segoe UI", system-ui, sans-serif; font-weight: 400; text-transform: none; font-size: .95rem; line-height: 1.45; }
+
+    /* Pupitres */
+    .voices { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.4rem 0 0; padding: 0; list-style: none; }
+    .voices li {
+      padding: .55rem 1.3rem; border-radius: 999px; background: var(--c); color: #fff;
+      font-family: var(--display); font-weight: 700; font-size: 1.15rem; text-transform: uppercase; letter-spacing: .05em;
+    }
+    .voices li.dark { color: var(--ink); }
+
+    /* Infos pratiques */
+    .info { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); margin-top: 1.5rem; }
+    .card { background: #fff; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 .15rem 1rem rgba(58,59,61,.1); border-top: 6px solid var(--c, var(--pink)); }
+    .card h3 { margin: 0 0 .6rem; font-family: var(--display); text-transform: uppercase; letter-spacing: .04em; font-size: 1.2rem; }
+    .card p { margin: 0 0 .3rem; }
+    .big { font-family: var(--display); font-weight: 700; font-size: 1.6rem; line-height: 1.2; }
+    .card a.link { display: inline-block; margin-top: .6rem; font-weight: 600; color: var(--pink); }
+
+    /* Affichette */
+    .poster { display: grid; gap: 2rem; grid-template-columns: minmax(0, 20rem) 1fr; align-items: center; }
+    .poster a { display: block; border-radius: 1rem; overflow: hidden; box-shadow: 0 .8rem 2rem rgba(58,59,61,.25); transition: transform .2s ease; }
+    .poster a:hover, .poster a:focus-visible { transform: rotate(-1.2deg) scale(1.01); }
+    @media (max-width: 720px) { .poster { grid-template-columns: 1fr; } .poster a { max-width: 20rem; margin-inline: auto; } }
+
+    /* Contact */
+    .links { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.4rem; }
+    .links a { padding: .65rem 1.3rem; border-radius: 999px; border: 2px solid var(--ink); text-decoration: none; font-weight: 700; }
+    .links a:hover, .links a:focus-visible { background: var(--ink); color: #fff; }
+    .links a.main { background: var(--pink); border-color: var(--pink); color: #fff; }
+    .links a.main:hover, .links a.main:focus-visible { background: var(--ink); border-color: var(--ink); }
+
+    /* À compléter : rechercher « todo » ou « [[ » dans le fichier */
+    .todo { background: #fff3a8; color: #5b4a00; padding: 0 .3em; border-radius: .25em; }
+
+    footer { background: var(--ink); color: #fff; text-align: center; padding: 0 0 2.2rem; font-size: .9rem; }
+    footer .pride-bar { margin-bottom: 1.6rem; }
+    footer p { margin: 0 auto; max-width: none; opacity: .88; }
+
+    :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+    header.nav :focus-visible, footer :focus-visible { outline-color: var(--yellow); }
+
+    .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .btn, .poster a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top"><img src="assets/logo.png" alt=""><span>Novavox</span></a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#choeur">Le chœur</a></li>
+          <li><a href="#rejoindre">Venir chanter</a></li>
+          <li><a href="#infos">Infos pratiques</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="wrap">
+        <img class="logo" src="assets/logo.png" alt="Logo de Novavox : deux croches, le nom écrit en lettres fines, avec un X aux couleurs du drapeau arc-en-ciel" width="320" height="320">
+        <h1>Venez chanter dans le nouveau chœur mixte <strong>LGBTQIA+ Novavox</strong></h1>
+        <span class="script">recrutement dans tous les pupitres</span>
+        <div class="cta">
+          <a class="btn" href="#rejoindre">Venir essayer</a>
+          <a class="btn alt" href="#infos">Où et quand ?</a>
+        </div>
+      </div>
+    </div>
+    <div class="pride-bar" aria-hidden="true"></div>
+
+    <section id="choeur">
+      <div class="wrap reveal">
+        <h2>Le chœur</h2>
+        <div class="split">
+          <div>
+            <p class="lead">Novavox est un chœur mixte LGBTQIA+ ouvert à toutes et à tous, à Lyon. On y chante ensemble, sans pression, dans une ambiance détendue et fun.</p>
+            <p>Pas besoin de savoir lire la musique ni d’avoir déjà chanté en chorale : chacun·e avance à son rythme, et tous les niveaux sont les bienvenus.</p>
+            <p>Le chœur est dirigé par Jean Zauns.</p>
+          </div>
+          <img class="illus" src="assets/novavox-graphic1.png" width="608" height="752" loading="lazy"
+               alt="Dessin d’un chœur : une vingtaine de choristes aux visages variés, vêtus de couleurs arc-en-ciel, chantent avec leur partition devant un rideau rouge, face à un chef ou une cheffe de dos. Bannière : Novavox, ensemble vocal sous la direction de Jean Zauns.">
+        </div>
+
+        <div class="bubbles">
+          <div class="bubble" style="--c: var(--pink)">Au rythme de chacun·e</div>
+          <div class="bubble" style="--c: var(--teal)">Ambiance détendue et fun</div>
+          <div class="bubble" style="--c: var(--blue)">Pas besoin de connaître la musique</div>
+          <div class="bubble" style="--c: var(--orange)">3 répétitions d’essai</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ecouter" class="tint">
+      <div class="wrap reveal">
+        <h2>Écoutez-nous</h2>
+        <p>Un avant-goût de ce que nous chantons : « Ave verum ».</p>
+        <div class="video">
+          <iframe src="https://www.youtube-nocookie.com/embed/LY8y2hQCp-8" title="« Ave verum », interprété par la chorale Nova Vox (vidéo YouTube)"
+                  loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="note"><a href="https://www.youtube.com/watch?v=LY8y2hQCp-8" target="_blank" rel="noopener">Voir la vidéo sur YouTube ↗</a></p>
+      </div>
+    </section>
+
+    <section id="rejoindre">
+      <div class="wrap reveal">
+        <h2>Venir chanter</h2>
+        <p class="lead">Nous recrutons dans tous les pupitres. Quelle que soit votre voix, il y a une place pour vous.</p>
+        <ul class="voices" aria-label="Pupitres">
+          <li style="--c: var(--pink)">Sopranes</li>
+          <li style="--c: var(--teal)" class="dark">Altos</li>
+          <li style="--c: var(--blue)">Ténors</li>
+          <li style="--c: var(--purple)">Basses</li>
+        </ul>
+        <p style="margin-top:1.6rem">Vous hésitez ? Venez essayer : <strong>les 3 premières répétitions sont des répétitions d’essai</strong>, sans engagement. Il suffit de se présenter à l’heure de la répétition, ou de nous envoyer un message avant si vous préférez.</p>
+        <div class="links">
+          <a class="main" href="#contact">Nous contacter</a>
+          <a href="#infos">Voir le lieu et l’horaire</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="infos" class="tint">
+      <div class="wrap reveal">
+        <h2>Infos pratiques</h2>
+        <div class="info">
+          <article class="card" style="--c: var(--pink)">
+            <h3>Quand ?</h3>
+            <p class="big">Tous les mercredis</p>
+            <p class="big">20h – 21h30</p>
+          </article>
+          <article class="card" style="--c: var(--teal)">
+            <h3>Où ?</h3>
+            <p class="big">Salle Bonnand</p>
+            <p>23 rue Bonnand<br>69003 Lyon</p>
+            <a class="link" href="https://www.openstreetmap.org/search?query=23%20rue%20Bonnand%20Lyon" target="_blank" rel="noopener">Voir sur la carte ↗</a>
+          </article>
+          <article class="card" style="--c: var(--blue)">
+            <h3>Pour qui ?</h3>
+            <p class="big">Toutes et tous</p>
+            <p>Personnes LGBTQIA+ et allié·es, tous niveaux, tous pupitres.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="affichette-titre">
+      <div class="wrap reveal">
+        <h2 id="affichette-titre">L’affichette</h2>
+        <div class="poster">
+          <a href="assets/affichette.png" target="_blank" rel="noopener">
+            <img src="assets/affichette.png" width="683" height="862" loading="lazy"
+                 alt="Affichette de Novavox : « Venez chanter dans le nouveau chœur mixte LGBTQIA+ Novavox, recrutement dans tous les pupitres ». Quatre visages souriants et des bulles : au rythme de chacun·e, ambiance détendue et fun, pas besoin de connaître la musique, 3 répétitions d’essai. Tous les mercredis de 20h à 21h30, salle Bonnand, 23 rue Bonnand, Lyon 3.">
+          </a>
+          <div>
+            <p class="lead">Parlez-en autour de vous !</p>
+            <p>Cliquez sur l’affichette pour l’ouvrir en grand, l’imprimer ou la partager.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="tint">
+      <div class="wrap reveal">
+        <h2>Contact</h2>
+        <p class="lead">Une question, l’envie de venir essayer ? Envoyez-nous un message sur Instagram ou sur Facebook, nous vous répondrons avec plaisir.</p>
+        <div class="links">
+          <a class="main" href="https://www.instagram.com/chorale.novavox/" target="_blank" rel="noopener">Instagram @chorale.novavox</a>
+          <a class="main" href="https://www.facebook.com/choralenovavox.lyon" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://github.com/bintjes/novavox" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="pride-bar" aria-hidden="true"></div>
+    <p>© <span id="year">2026</span> Novavox · Chœur mixte LGBTQIA+ · Lyon</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var els = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: .12 });
+      els.forEach(function (el) { io.observe(el); });
+    } else {
+      els.forEach(function (el) { el.classList.add('in'); });
+    }
+  </script>
+</body>
+</html>
